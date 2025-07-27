@@ -1,5 +1,5 @@
 # (FR)
-Bonjour petit dévelopeur (je pense), tu va pouvoir tester WinDem OS V3.0 ! Mais avant tous, tu dois faire toutes ces étapes sinon tu ne pourra pas:
+Bonjour petit dévelopeur (je pense), tu va pouvoir tester WinDem OS V3.6 ! Mais avant tous, tu dois faire toutes ces étapes sinon tu ne pourra pas:
 
 # créer l'image disk
 
@@ -34,7 +34,7 @@ Signée: WinDem Coroperation
 
 # (EN)
 
-Hello, little developer (I think), you're about to be able to test WinDem OS V3.0! But first, you must complete all these steps, otherwise you won't be able to:
+Hello, little developer (I think), you're about to be able to test WinDem OS V3.6! But first, you must complete all these steps, otherwise you won't be able to:
 
 # create disk image
 
