@@ -1,5 +1,8 @@
 @echo off
 
+REM pour utilisé le dossier root du projet (ou ce trouve les .asm)
+pushd "%~dp0..\"
+
 REM Clean old files
 if exist bootloader.bin del bootloader.bin
 if exist kernel.bin del kernel.bin
@@ -25,6 +28,9 @@ copy /b bootloader.bin + padded_kernel.bin os.img > nul
 REM Nettoyer fichiers temporaires
 del pad.bin
 del padded_kernel.bin
+
+REM pour retourné sur le dossier du script avant de quitté
+popd
 
 echo Image disque créée : os.img
 pause
