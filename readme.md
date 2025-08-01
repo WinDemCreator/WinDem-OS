@@ -1,61 +1,54 @@
 # (FR)
-Bonjour petit dévelopeur (je pense), tu va pouvoir tester WinDem OS V3.6 ! Mais avant tous, tu dois faire toutes ces étapes sinon tu ne pourra pas:
+Bonjour petit développeur (je pense), tu vas pouvoir tester WinDem OS V3.6 ! Mais avant tout, tu dois suivre toutes ces étapes, sinon tu ne pourras pas :
 
-# créer l'image disk
+## Créer l'image disque
 
-**Etape 1:**
-Avoir un disque D:\ (OBLIGATOIRE)
+**Étape 1 :**  
+Installer NASM et QEMU. Si vous utilisez le répertoire par défaut, il devrait être détecté automatiquement ; sinon, indiquez le chemin d'accès précis de l'exécutable `qemu-system-i386.exe` dans le fichier `.env` du projet.
 
-**Etape 2:**
-Installer NASM dans ce repertoire: D:\NASM\ et installer qemu dans ce répértoire: D:\qemu\
+**Étape 2 :**  
+Lancez le script `build.bat` sur Windows ou `build.sh` sur Linux pour créer l'image.
 
-**Etape 3:**
-Lancé build.bat ou si un fichier nommé: os.img est déjà créé, ne pas lancer build.bat
+**Étape 3 :**  
+Lancez `run.bat` sur Windows ou `run.sh` sur Linux et profitez de l'OS WinDem !
 
-**Etape 4:**
-Lancer run.bat et profite de l'os WinDem !
+## Lancer la VM
 
+Les scripts contiennent simplement cette commande pour lancer la VM via le terminal de l'OS :
 
-**Lancé la VM**
-Windows via cmd
-``D:\qemu\qemu-system-i386 -drive format=raw,file=os.img``
-
-Système unix via term :
-``qemu-system-i386 -drive format=raw,file=os.img``
-
-Signée: WinDem Coroperation
+**Windows :**
+``%QEMU% -drive format=raw,file=os.img``
 
 
-
-
-
-
-
-
-# (EN)
-
-Hello, little developer (I think), you're about to be able to test WinDem OS V3.6! But first, you must complete all these steps, otherwise you won't be able to:
-
-# create disk image
-
-**Step 1:**
-Have a D:\ drive (MANDATORY)
-
-**Step 2:**
-Install NASM in this directory: D:\NASM\ and install qemu in this directory: D:\qemu\
-
-**Step 3:**
-Run build.bat or, if a file named os.img is already created, don't run build.bat
-
-**Step 4:**
-Run run.bat and enjoy the WinDem OS!
-
-**Start the VM**
-Windows via cmd
-``D:\qemu\qemu-system-i386 -drive format=raw,file=os.img``
-
-Unix system via term :
+**Système Unix :**  
 ``qemu-system-i386 -drive format=raw,file=os.img``
 
 
-Signed: WinDem Corporation
+
+
+
+
+
+
+# (EN)  
+Hello little developer (I think), you are about to test WinDem OS V3.6! But first, you need to follow all these steps, otherwise you won’t be able to:
+
+# create the disk image
+
+**Step 1:**  
+Install NASM and QEMU. If you use the default directory, it should be detected automatically; otherwise, set the exact path to the executable `qemu-system-i386.exe` in the project’s `.env` file.
+
+**Step 2:**  
+Run the `build.bat` script on Windows or `build.sh` on Linux to create the image.
+
+**Step 3:**  
+Run `run.bat` on Windows or `run.sh` on Linux and enjoy the WinDem OS!
+
+**Starting the VM**  
+The scripts simply contain this command to launch the VM via the OS terminal:  
+
+**Windows:**
+``%QEMU% -drive format=raw,file=os.img``
+
+**Unix systems:**  
+``qemu-system-i386 -drive format=raw,file=os.img``
